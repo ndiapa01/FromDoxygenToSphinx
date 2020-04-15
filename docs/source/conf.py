@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 import sys
-import breathe
+
 project = 'DoxySphinx'
 copyright = '2020, Pape Ilo Ndiaye'
 author = 'Pape Ilo Ndiaye'
@@ -31,7 +31,6 @@ release = '01'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-sys.path.append( "../breathe/" )
 
 extensions = [ "breathe" ]
 
