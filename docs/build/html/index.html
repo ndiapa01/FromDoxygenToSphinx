@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to DoxySphinx’s documentation! &#8212; DoxySphinx 01 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-doxysphinx-s-documentation">
+<h1>Welcome to DoxySphinx’s documentation!<a class="headerlink" href="#welcome-to-doxysphinx-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="blinky-h">
+<h1>blinky.h<a class="headerlink" href="#blinky-h" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv46Blinky">
+<span id="_CPPv36Blinky"></span><span id="_CPPv26Blinky"></span><span id="Blinky"></span><span class="target" id="class_blinky"></span><em class="property">class </em><code class="sig-name descname">Blinky</code><a class="headerlink" href="#_CPPv46Blinky" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N6Blinky6BlinkyER18LedDriverInterface">
+<span id="_CPPv3N6Blinky6BlinkyER18LedDriverInterface"></span><span id="_CPPv2N6Blinky6BlinkyER18LedDriverInterface"></span><span id="Blinky::Blinky__LedDriverInterfaceR"></span><span class="target" id="class_blinky_1acd217ecec60e87b35c2b1929c5fc7bc7"></span><code class="sig-name descname">Blinky</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv418LedDriverInterface" title="LedDriverInterface">LedDriverInterface</a> &amp;<em>arg_ledDriver</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Blinky6BlinkyER18LedDriverInterface" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#class_blinky"><span class="std std-ref">Blinky</span></a> constructor. </p>
+<p><dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[in]</span> <span class="pre">arg_ledDriver</span></code>: A LedDriver implementing the <a class="reference internal" href="#class_led_driver_interface"><span class="std std-ref">LedDriverInterface</span></a> </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6Blinky5startEv">
+<span id="_CPPv3N6Blinky5startEv"></span><span id="_CPPv2N6Blinky5startEv"></span><span id="Blinky::start__void"></span><span class="target" id="class_blinky_1adf5b98d9daf0b5f56be950219c1e6a3d"></span>void <code class="sig-name descname">start</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Blinky5startEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Start the blinking. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6Blinky9isStartedEv">
+<span id="_CPPv3N6Blinky9isStartedEv"></span><span id="_CPPv2N6Blinky9isStartedEv"></span><span id="Blinky::isStarted__void"></span><span class="target" id="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d"></span>bool <code class="sig-name descname">isStarted</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Blinky9isStartedEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return the blinking state as a boolean. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>bool: true if blinking is started, false if the blinking is not started </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6Blinky4stopEv">
+<span id="_CPPv3N6Blinky4stopEv"></span><span id="_CPPv2N6Blinky4stopEv"></span><span id="Blinky::stop__void"></span><span class="target" id="class_blinky_1a6200cf45ba6b27cacd828acb00c2e4f6"></span>void <code class="sig-name descname">stop</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Blinky4stopEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Stop the blinking. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N6Blinky7refreshEv">
+<span id="_CPPv3N6Blinky7refreshEv"></span><span id="_CPPv2N6Blinky7refreshEv"></span><span id="Blinky::refresh__void"></span><span class="target" id="class_blinky_1a62f00007c4a2de94f5cf0d0943380bd3"></span>void <code class="sig-name descname">refresh</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N6Blinky7refreshEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Schedule the blinking. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="member">
+<dt id="_CPPv4N6Blinky11m_ledDriverE">
+<span id="_CPPv3N6Blinky11m_ledDriverE"></span><span id="_CPPv2N6Blinky11m_ledDriverE"></span><span id="Blinky::m_ledDriver__LedDriverInterfaceR"></span><span class="target" id="class_blinky_1a224ab7246d4583d327a9d8c53116841a"></span><a class="reference internal" href="#_CPPv418LedDriverInterface" title="LedDriverInterface">LedDriverInterface</a> &amp;<code class="sig-name descname">m_ledDriver</code><a class="headerlink" href="#_CPPv4N6Blinky11m_ledDriverE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N6Blinky9m_counterE">
+<span id="_CPPv3N6Blinky9m_counterE"></span><span id="_CPPv2N6Blinky9m_counterE"></span><span id="Blinky::m_counter__uint16_t"></span><span class="target" id="class_blinky_1afb755b29246904c62eae072a6bda89f9"></span>uint16_t <code class="sig-name descname">m_counter</code><a class="headerlink" href="#_CPPv4N6Blinky9m_counterE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N6Blinky12m_isBlinkingE">
+<span id="_CPPv3N6Blinky12m_isBlinkingE"></span><span id="_CPPv2N6Blinky12m_isBlinkingE"></span><span id="Blinky::m_isBlinking__b"></span><span class="target" id="class_blinky_1a7a37245a6b0cf22d7404d77db2aebdf9"></span>bool <code class="sig-name descname">m_isBlinking</code><a class="headerlink" href="#_CPPv4N6Blinky12m_isBlinkingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="leddriverinterface-h">
+<h1>LedDriverInterface.h<a class="headerlink" href="#leddriverinterface-h" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="_CPPv418LedDriverInterface">
+<span id="_CPPv318LedDriverInterface"></span><span id="_CPPv218LedDriverInterface"></span><span id="LedDriverInterface"></span><span class="target" id="class_led_driver_interface"></span><em class="property">class </em><code class="sig-name descname">LedDriverInterface</code><a class="headerlink" href="#_CPPv418LedDriverInterface" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N18LedDriverInterface2onEv">
+<span id="_CPPv3N18LedDriverInterface2onEv"></span><span id="_CPPv2N18LedDriverInterface2onEv"></span><span id="LedDriverInterface::on__void"></span><span class="target" id="class_led_driver_interface_1a3bf83d82ffb09a8dfdd8a8e685142037"></span><em class="property">virtual</em> void <code class="sig-name descname">on</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N18LedDriverInterface2onEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Switch the LED on. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N18LedDriverInterface4isOnEv">
+<span id="_CPPv3N18LedDriverInterface4isOnEv"></span><span id="_CPPv2N18LedDriverInterface4isOnEv"></span><span id="LedDriverInterface::isOn__void"></span><span class="target" id="class_led_driver_interface_1ada83f2bc966dc9236decda2f2cc46159"></span><em class="property">virtual</em> bool <code class="sig-name descname">isOn</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N18LedDriverInterface4isOnEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if the LED is on. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>bool: true is LED is on, false if LED is off </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N18LedDriverInterface3offEv">
+<span id="_CPPv3N18LedDriverInterface3offEv"></span><span id="_CPPv2N18LedDriverInterface3offEv"></span><span id="LedDriverInterface::off__void"></span><span class="target" id="class_led_driver_interface_1a19e3747e02e10bb73ab7b204a9e6314c"></span><em class="property">virtual</em> void <code class="sig-name descname">off</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N18LedDriverInterface3offEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Switch the LED off. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N18LedDriverInterface5isOffEv">
+<span id="_CPPv3N18LedDriverInterface5isOffEv"></span><span id="_CPPv2N18LedDriverInterface5isOffEv"></span><span id="LedDriverInterface::isOff__void"></span><span class="target" id="class_led_driver_interface_1af05cb638cec96cc8fa6b39abbec9ee8a"></span><em class="property">virtual</em> bool <code class="sig-name descname">isOff</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N18LedDriverInterface5isOffEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if the LED is on. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>bool: true is LED is off, false if LED is on </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N18LedDriverInterface6toggleEv">
+<span id="_CPPv3N18LedDriverInterface6toggleEv"></span><span id="_CPPv2N18LedDriverInterface6toggleEv"></span><span id="LedDriverInterface::toggle__void"></span><span class="target" id="class_led_driver_interface_1a97888bc6e007bc88dd13ced7f2b01116"></span><em class="property">virtual</em> void <code class="sig-name descname">toggle</code><span class="sig-paren">(</span>void<span class="sig-paren">)</span> = 0<a class="headerlink" href="#_CPPv4N18LedDriverInterface6toggleEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Toggle the LED. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">DoxySphinx</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pape Ilo Ndiaye.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

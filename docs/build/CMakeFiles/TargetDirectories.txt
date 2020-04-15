@@ -1,0 +1,3 @@
+C:/Users/ndiapa01/Desktop/documentation_generation/include/build/CMakeFiles/Sphinx.dir
+C:/Users/ndiapa01/Desktop/documentation_generation/include/build/CMakeFiles/edit_cache.dir
+C:/Users/ndiapa01/Desktop/documentation_generation/include/build/CMakeFiles/rebuild_cache.dir

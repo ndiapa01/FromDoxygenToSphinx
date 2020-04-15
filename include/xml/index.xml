@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="class_blinky" kind="class"><name>Blinky</name>
+    <member refid="class_blinky_1a224ab7246d4583d327a9d8c53116841a" kind="variable"><name>m_ledDriver</name></member>
+    <member refid="class_blinky_1afb755b29246904c62eae072a6bda89f9" kind="variable"><name>m_counter</name></member>
+    <member refid="class_blinky_1a7a37245a6b0cf22d7404d77db2aebdf9" kind="variable"><name>m_isBlinking</name></member>
+    <member refid="class_blinky_1acd217ecec60e87b35c2b1929c5fc7bc7" kind="function"><name>Blinky</name></member>
+    <member refid="class_blinky_1adf5b98d9daf0b5f56be950219c1e6a3d" kind="function"><name>start</name></member>
+    <member refid="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d" kind="function"><name>isStarted</name></member>
+    <member refid="class_blinky_1a6200cf45ba6b27cacd828acb00c2e4f6" kind="function"><name>stop</name></member>
+    <member refid="class_blinky_1a62f00007c4a2de94f5cf0d0943380bd3" kind="function"><name>refresh</name></member>
+  </compound>
+  <compound refid="class_led_driver_interface" kind="class"><name>LedDriverInterface</name>
+    <member refid="class_led_driver_interface_1a3bf83d82ffb09a8dfdd8a8e685142037" kind="function"><name>on</name></member>
+    <member refid="class_led_driver_interface_1ada83f2bc966dc9236decda2f2cc46159" kind="function"><name>isOn</name></member>
+    <member refid="class_led_driver_interface_1a19e3747e02e10bb73ab7b204a9e6314c" kind="function"><name>off</name></member>
+    <member refid="class_led_driver_interface_1af05cb638cec96cc8fa6b39abbec9ee8a" kind="function"><name>isOff</name></member>
+    <member refid="class_led_driver_interface_1a97888bc6e007bc88dd13ced7f2b01116" kind="function"><name>toggle</name></member>
+  </compound>
+  <compound refid="blinky_8h" kind="file"><name>blinky.h</name>
+  </compound>
+  <compound refid="_led_driver_interface_8h" kind="file"><name>LedDriverInterface.h</name>
+  </compound>
+</doxygenindex>
