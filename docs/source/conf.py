@@ -17,6 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 import sys
+import breathe
 project = 'DoxySphinx'
 copyright = '2020, Pape Ilo Ndiaye'
 author = 'Pape Ilo Ndiaye'
