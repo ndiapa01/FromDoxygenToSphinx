@@ -34,7 +34,7 @@ sys.path.append( "../breathe/" )
 
 extensions = [ "breathe" ]
 
-breathe_projects = { "blinky": "C:/Users/ndiapa01/Desktop/documentation_generation/include/xml/" }
+breathe_projects = { "blinky": "C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/xml/" }
 
 breathe_default_project = "blinky"
 
