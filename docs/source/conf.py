@@ -32,7 +32,7 @@ release = '01'
 # ones.
 sys.path.append( "../breathe/" )
 
-extensions = [ "breathe" ]
+# extensions = [ "breathe" ]
 
 breathe_projects = { "blinky": "C:/Users/ndiapa01/Desktop/documentation_generation/include/xml/" }
 
