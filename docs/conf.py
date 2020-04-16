@@ -51,10 +51,10 @@ breathe_projects = { }
 
 if read_the_docs_build:
     input_dir = '../source'
-    output_dir = '.'
+    output_dir = './xml'
     configureDoxyfile(input_dir, output_dir)
     subprocess.call('doxygen', shell=True)
-    breathe_projects['blinky'] = output_dir + '/xml'
+    breathe_projects['blinky'] = output_dir 
  
 
 # breathe_projects = { "blinky": "C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/xml/"}
