@@ -1,3 +1,0 @@
-repository='http://bitbucket.srl4417r.hq001.corp.sfy/scm/~faurad01/cmake_toolchains.git'
-module=''
-tag='origin'
