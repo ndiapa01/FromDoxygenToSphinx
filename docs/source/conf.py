@@ -10,19 +10,19 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
-import sys
+
 project = 'DoxySphinx'
-copyright = '2020, Pape Ilo Ndiaye'
-author = 'Pape Ilo Ndiaye'
+copyright = '2020, Ndiaye Pape ilo'
+author = 'Ndiaye Pape ilo'
 
 # The full version, including alpha/beta/rc tags
-release = '01'
+release = '02'
 
 
 # -- General configuration ---------------------------------------------------
@@ -30,34 +30,32 @@ release = '01'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-
 extensions = [ "breathe" ]
 
-import subprocess, os
- 
 def configureDoxyfile(input_dir, output_dir):
-    with open('Doxyfile', 'r') as file :
+    with open('../Doxyfile', 'r') as file :
         filedata = file.read()
  
     filedata = filedata.replace('@DOXYGEN_INPUT_DIR@', input_dir)
     filedata = filedata.replace('@DOXYGEN_OUTPUT_DIR@', output_dir)
  
-    with open('Doxyfile', 'w') as file:
+    with open('../Doxyfile', 'w') as file:
         file.write(filedata)
 
 # Check if we're running on Read the Docs' servers
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-breathe_projects = { }
+
+breathe_projects = {"blinky": "../xml"}
 
 if read_the_docs_build:
-    input_dir = '../source'
-    output_dir = './xml'
+    input_dir = '' # this is actually doxygen's input folder (we do not set it in this stage
+    output_dir = '../xml' #this is doxygen's output or breathe input folder
     configureDoxyfile(input_dir, output_dir)
     subprocess.call('doxygen', shell=True)
     breathe_projects['blinky'] = output_dir 
- 
 
-# breathe_projects = { "blinky": "C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/xml/"}
+
+# breathe_projects = { "blinky": "../xml"}
 
 breathe_default_project = "blinky"
 

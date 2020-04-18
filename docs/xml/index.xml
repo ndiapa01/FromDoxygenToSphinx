@@ -21,4 +21,6 @@
   </compound>
   <compound refid="_led_driver_interface_8h" kind="file"><name>LedDriverInterface.h</name>
   </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
 </doxygenindex>

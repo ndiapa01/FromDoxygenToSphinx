@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="_led_driver_interface_8h" kind="file" language="C++">
     <compoundname>LedDriverInterface.h</compoundname>
-    <includedby refid="blinky_8h" local="yes">blinky.h</includedby>
+    <includedby refid="blinky_8h" local="yes">include/blinky.h</includedby>
     <invincdepgraph>
-      <node id="2">
-        <label>blinky.h</label>
-        <link refid="blinky_8h"/>
-      </node>
       <node id="1">
-        <label>LedDriverInterface.h</label>
+        <label>include/LedDriverInterface.h</label>
         <link refid="_led_driver_interface_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+      </node>
+      <node id="2">
+        <label>include/blinky.h</label>
+        <link refid="blinky_8h"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_led_driver_interface" prot="public">LedDriverInterface</innerclass>
@@ -65,6 +65,6 @@
 <codeline lineno="54"><highlight class="comment">*<sp/>any<sp/>means,<sp/>without<sp/>SOMFY<sp/>SAS&apos;s<sp/>prior<sp/>written<sp/>approval,<sp/>is<sp/>strictly<sp/>forbidden.</highlight></codeline>
 <codeline lineno="55"><highlight class="comment">*******************************************************************************/</highlight></codeline>
     </programlisting>
-    <location file="LedDriverInterface.h"/>
+    <location file="include/LedDriverInterface.h"/>
   </compounddef>
 </doxygen>

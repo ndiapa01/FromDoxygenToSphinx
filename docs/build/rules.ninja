@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files (x86)\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ndiapa01\Desktop\documentation_generation\include -BC:\Users\ndiapa01\Desktop\documentation_generation\include\build
+  command = "C:\Program Files (x86)\CMake\bin\cmake.exe" --regenerate-during-build -SC:\Users\ndiapa01\Desktop\FromDoxygenToSphinx\docs -BC:\Users\ndiapa01\Desktop\FromDoxygenToSphinx\docs\build
   description = Re-running CMake...
   generator = 1
 

@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="54" column="28" bodyfile="blinky.h" bodystart="54" bodyend="-1"/>
+        <location file="include/blinky.h" line="54" column="28" bodyfile="include/blinky.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_blinky_1afb755b29246904c62eae072a6bda89f9" prot="private" static="no" mutable="no">
         <type>uint16_t</type>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="55" column="18" bodyfile="blinky.h" bodystart="55" bodyend="-1"/>
+        <location file="include/blinky.h" line="55" column="18" bodyfile="include/blinky.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_blinky_1a7a37245a6b0cf22d7404d77db2aebdf9" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="56" column="14" bodyfile="blinky.h" bodystart="56" bodyend="-1"/>
+        <location file="include/blinky.h" line="56" column="14" bodyfile="include/blinky.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -70,7 +70,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="29" column="9"/>
+        <location file="include/blinky.h" line="29" column="9"/>
       </memberdef>
       <memberdef kind="function" id="class_blinky_1adf5b98d9daf0b5f56be950219c1e6a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="34" column="14"/>
+        <location file="include/blinky.h" line="34" column="14"/>
       </memberdef>
       <memberdef kind="function" id="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="40" column="14"/>
+        <location file="include/blinky.h" line="40" column="14"/>
       </memberdef>
       <memberdef kind="function" id="class_blinky_1a6200cf45ba6b27cacd828acb00c2e4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="45" column="14"/>
+        <location file="include/blinky.h" line="45" column="14"/>
       </memberdef>
       <memberdef kind="function" id="class_blinky_1a62f00007c4a2de94f5cf0d0943380bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -141,14 +141,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="blinky.h" line="50" column="14"/>
+        <location file="include/blinky.h" line="50" column="14"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="blinky.h" line="22" column="1" bodyfile="blinky.h" bodystart="23" bodyend="57"/>
+    <location file="include/blinky.h" line="22" column="1" bodyfile="include/blinky.h" bodystart="23" bodyend="57"/>
     <listofallmembers>
       <member refid="class_blinky_1acd217ecec60e87b35c2b1929c5fc7bc7" prot="public" virt="non-virtual"><scope>Blinky</scope><name>Blinky</name></member>
       <member refid="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d" prot="public" virt="non-virtual"><scope>Blinky</scope><name>isStarted</name></member>

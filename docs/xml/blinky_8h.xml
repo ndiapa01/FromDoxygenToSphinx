@@ -8,17 +8,17 @@
       <node id="2">
         <label>cstdint</label>
       </node>
+      <node id="3">
+        <label>LedDriverInterface.h</label>
+        <link refid="_led_driver_interface_8h"/>
+      </node>
       <node id="1">
-        <label>blinky.h</label>
+        <label>include/blinky.h</label>
         <link refid="blinky_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-      </node>
-      <node id="3">
-        <label>LedDriverInterface.h</label>
-        <link refid="_led_driver_interface_8h"/>
       </node>
     </incdepgraph>
     <innerclass refid="class_blinky" prot="public">Blinky</innerclass>
@@ -80,6 +80,6 @@
 <codeline lineno="63"><highlight class="comment">*<sp/>any<sp/>means,<sp/>without<sp/>SOMFY<sp/>SAS&apos;s<sp/>prior<sp/>written<sp/>approval,<sp/>is<sp/>strictly<sp/>forbidden.</highlight></codeline>
 <codeline lineno="64"><highlight class="comment">*******************************************************************************/</highlight></codeline>
     </programlisting>
-    <location file="blinky.h"/>
+    <location file="include/blinky.h"/>
   </compounddef>
 </doxygen>
