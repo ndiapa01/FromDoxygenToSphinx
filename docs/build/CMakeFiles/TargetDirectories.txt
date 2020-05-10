@@ -1,3 +1,0 @@
-C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/build/CMakeFiles/Sphinx.dir
-C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/build/CMakeFiles/edit_cache.dir
-C:/Users/ndiapa01/Desktop/FromDoxygenToSphinx/docs/build/CMakeFiles/rebuild_cache.dir

@@ -12,18 +12,17 @@
 #
 import os
 import sys
-import subprocess
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'DoxySphinx'
-copyright = '2020, Ndiaye Pape ilo'
-author = 'Ndiaye Pape ilo'
+project = 'DoxyShpinx'
+copyright = '2020, Somfy'
+author = 'Somfy'
 
 # The full version, including alpha/beta/rc tags
-release = '02'
+release = '01'
 
 
 # -- General configuration ---------------------------------------------------
@@ -31,7 +30,7 @@ release = '02'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [ "breathe" ]
+extensions = ["breathe"]
 
 def configureDoxyfile(input_dir, output_dir):
     with open('../Doxyfile', 'r') as file :
@@ -45,18 +44,17 @@ def configureDoxyfile(input_dir, output_dir):
 
 # Check if we're running on Read the Docs' servers
 read_the_docs_build = os.environ.get('READTHEDOCS', None) == 'True'
-
-breathe_projects = {"blinky": "../xml"}
+breathe_projects = { }
 
 if read_the_docs_build:
-    input_dir = '' # this is actually doxygen's input folder (we do not set it in this stage
-    output_dir = '../xml' #this is doxygen's output or breathe input folder
+    input_dir = '../../source'
+    output_dir = '../xml'
     configureDoxyfile(input_dir, output_dir)
     subprocess.call('doxygen', shell=True)
     breathe_projects['blinky'] = output_dir 
 
 
-# breathe_projects = { "blinky": "../xml"}
+breathe_projects = { "blinky": "../xml"}
 
 breathe_default_project = "blinky"
 
