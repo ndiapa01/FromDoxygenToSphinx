@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_led_driver_interface" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>LedDriverInterface</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_led_driver_interface_1a3bf83d82ffb09a8dfdd8a8e685142037" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LedDriverInterface::on</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>on</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Switch the LED on. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/LedDriverInterface.h" line="25" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_driver_interface_1ada83f2bc966dc9236decda2f2cc46159" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LedDriverInterface::isOn</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>isOn</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if the LED is on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool: true is LED is on, false if LED is off </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/LedDriverInterface.h" line="31" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_driver_interface_1a19e3747e02e10bb73ab7b204a9e6314c" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LedDriverInterface::off</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>off</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Switch the LED off. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/LedDriverInterface.h" line="36" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_driver_interface_1af05cb638cec96cc8fa6b39abbec9ee8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool LedDriverInterface::isOff</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>isOff</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Check if the LED is on. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool: true is LED is off, false if LED is on </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/LedDriverInterface.h" line="42" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_driver_interface_1a97888bc6e007bc88dd13ced7f2b01116" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void LedDriverInterface::toggle</definition>
+        <argsstring>(void)=0</argsstring>
+        <name>toggle</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Toggle the LED. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/LedDriverInterface.h" line="47" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/LedDriverInterface.h" line="19" column="1" bodyfile="include/LedDriverInterface.h" bodystart="20" bodyend="48"/>
+    <listofallmembers>
+      <member refid="class_led_driver_interface_1af05cb638cec96cc8fa6b39abbec9ee8a" prot="public" virt="pure-virtual"><scope>LedDriverInterface</scope><name>isOff</name></member>
+      <member refid="class_led_driver_interface_1ada83f2bc966dc9236decda2f2cc46159" prot="public" virt="pure-virtual"><scope>LedDriverInterface</scope><name>isOn</name></member>
+      <member refid="class_led_driver_interface_1a19e3747e02e10bb73ab7b204a9e6314c" prot="public" virt="pure-virtual"><scope>LedDriverInterface</scope><name>off</name></member>
+      <member refid="class_led_driver_interface_1a3bf83d82ffb09a8dfdd8a8e685142037" prot="public" virt="pure-virtual"><scope>LedDriverInterface</scope><name>on</name></member>
+      <member refid="class_led_driver_interface_1a97888bc6e007bc88dd13ced7f2b01116" prot="public" virt="pure-virtual"><scope>LedDriverInterface</scope><name>toggle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

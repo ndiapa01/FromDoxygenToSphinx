@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="class_blinky" kind="class" language="C++" prot="public">
+    <compoundname>Blinky</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_blinky_1a224ab7246d4583d327a9d8c53116841a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_led_driver_interface" kindref="compound">LedDriverInterface</ref> &amp;</type>
+        <definition>LedDriverInterface&amp; Blinky::m_ledDriver</definition>
+        <argsstring></argsstring>
+        <name>m_ledDriver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="54" column="28" bodyfile="include/blinky.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_blinky_1afb755b29246904c62eae072a6bda89f9" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Blinky::m_counter</definition>
+        <argsstring></argsstring>
+        <name>m_counter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="55" column="18" bodyfile="include/blinky.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_blinky_1a7a37245a6b0cf22d7404d77db2aebdf9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Blinky::m_isBlinking</definition>
+        <argsstring></argsstring>
+        <name>m_isBlinking</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="56" column="14" bodyfile="include/blinky.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_blinky_1acd217ecec60e87b35c2b1929c5fc7bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Blinky::Blinky</definition>
+        <argsstring>(LedDriverInterface &amp;arg_ledDriver)</argsstring>
+        <name>Blinky</name>
+        <param>
+          <type><ref refid="class_led_driver_interface" kindref="compound">LedDriverInterface</ref> &amp;</type>
+          <declname>arg_ledDriver</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="class_blinky" kindref="compound">Blinky</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">arg_ledDriver</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A LedDriver implementing the <ref refid="class_led_driver_interface" kindref="compound">LedDriverInterface</ref> </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="29" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blinky_1adf5b98d9daf0b5f56be950219c1e6a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Blinky::start</definition>
+        <argsstring>(void)</argsstring>
+        <name>start</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Start the blinking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="34" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Blinky::isStarted</definition>
+        <argsstring>(void)</argsstring>
+        <name>isStarted</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Return the blinking state as a boolean. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool: true if blinking is started, false if the blinking is not started </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="40" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blinky_1a6200cf45ba6b27cacd828acb00c2e4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Blinky::stop</definition>
+        <argsstring>(void)</argsstring>
+        <name>stop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Stop the blinking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="45" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="class_blinky_1a62f00007c4a2de94f5cf0d0943380bd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Blinky::refresh</definition>
+        <argsstring>(void)</argsstring>
+        <name>refresh</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Schedule the blinking. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/blinky.h" line="50" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/blinky.h" line="22" column="1" bodyfile="include/blinky.h" bodystart="23" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_blinky_1acd217ecec60e87b35c2b1929c5fc7bc7" prot="public" virt="non-virtual"><scope>Blinky</scope><name>Blinky</name></member>
+      <member refid="class_blinky_1abc8cebee996a9cfd118ac3755f85a08d" prot="public" virt="non-virtual"><scope>Blinky</scope><name>isStarted</name></member>
+      <member refid="class_blinky_1afb755b29246904c62eae072a6bda89f9" prot="private" virt="non-virtual"><scope>Blinky</scope><name>m_counter</name></member>
+      <member refid="class_blinky_1a7a37245a6b0cf22d7404d77db2aebdf9" prot="private" virt="non-virtual"><scope>Blinky</scope><name>m_isBlinking</name></member>
+      <member refid="class_blinky_1a224ab7246d4583d327a9d8c53116841a" prot="private" virt="non-virtual"><scope>Blinky</scope><name>m_ledDriver</name></member>
+      <member refid="class_blinky_1a62f00007c4a2de94f5cf0d0943380bd3" prot="public" virt="non-virtual"><scope>Blinky</scope><name>refresh</name></member>
+      <member refid="class_blinky_1adf5b98d9daf0b5f56be950219c1e6a3d" prot="public" virt="non-virtual"><scope>Blinky</scope><name>start</name></member>
+      <member refid="class_blinky_1a6200cf45ba6b27cacd828acb00c2e4f6" prot="public" virt="non-virtual"><scope>Blinky</scope><name>stop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
