@@ -81,10 +81,17 @@
               <!-- Local TOC -->
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Somfy Component Documentation generation</a><ul>
-<li><a class="reference internal" href="#header-files-structures">header files Structures</a></li>
-<li><a class="reference internal" href="#source-files-structures">source files Structures</a></li>
-<li><a class="reference internal" href="#templates">Templates</a></li>
-<li><a class="reference internal" href="#welcome-to-componentdocumentation-s-documentation">Welcome to ComponentDocumentation’s documentation!</a></li>
+<li><a class="reference internal" href="#syntaxes-and-keywords">Syntaxes and keywords</a><ul>
+<li><a class="reference internal" href="#comment-blocks">Comment blocks:</a></li>
+<li><a class="reference internal" href="#keywords">Keywords:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#documentation-s-structures">documentation’s Structures</a><ul>
+<li><a class="reference internal" href="#public-elements">Public elements:</a></li>
+<li><a class="reference internal" href="#private-elements">Private elements:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#documentation-example">documentation example:</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
@@ -157,42 +164,257 @@
 <p>This document adresses how to stucture a component documentation and recommendations about what we should provide
 as content for each source code element(Classes,Constructors/Destructors,functions,attributes etc…).
 Examples tested on real components and reusable templates will be given in order to improve developpers efficency.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We’ll not be specifiying any tool or how to perform documentation generation in this document</p>
+</div>
+<div class="section" id="syntaxes-and-keywords">
+<h2>Syntaxes and keywords<a class="headerlink" href="#syntaxes-and-keywords" title="Permalink to this headline">¶</a></h2>
+<p>Doxygen generates codes documentation using comment blocks and some keywords to structure documents.This
+following section will provide information about how to set a comment block for C++ codes and and a small
+description of doxygen most popular and used tags.</p>
+<div class="section" id="comment-blocks">
+<h3>Comment blocks:<a class="headerlink" href="#comment-blocks" title="Permalink to this headline">¶</a></h3>
+<p>There is several ways to define a comment block in C++:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>single line comment using <code class="docutils literal notranslate"><span class="pre">\\\</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">///</span>
+<span class="o">///</span> <span class="n">write</span> <span class="n">your</span> <span class="n">Documentation</span>
+<span class="o">///</span>
+</pre></div>
+</div>
+</li>
+<li><p>single line comment using  <code class="docutils literal notranslate"><span class="pre">\\!</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>//!
+//! write your documentation
+//!
+</pre></div>
+</div>
+</li>
+<li><p>multi line comment using <code class="docutils literal notranslate"><span class="pre">/*!</span></code> and  <code class="docutils literal notranslate"><span class="pre">*/</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+*  write your documentation
+*/
+</pre></div>
+</div>
+</li>
+</ol>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>for more consistency We’ll not be specifiying any tool or how to perform documentation generation in this document</p>
+<p>in the last case the intermediate <code class="docutils literal notranslate"><span class="pre">*</span></code> is optionnal.</p>
 </div>
-<div class="section" id="header-files-structures">
-<h2>header files Structures<a class="headerlink" href="#header-files-structures" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>Public elements:</p>
+</div>
+<div class="section" id="keywords">
+<h3>Keywords:<a class="headerlink" href="#keywords" title="Permalink to this headline">¶</a></h3>
+<p>doxygen provides several tags to use in your source code. Note that tags must be
+inserted in a comment block so doxygen knows it is part of structured text that needs to end up
+in the generated documentation.
+here are some useful tags that you can use to document your code:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">\file</span></code>:</p></li>
+</ol>
+<blockquote>
+<div><p>allows to give a name to the file that you want to generate documentation with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+* \file test.cpp
+*/
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><code class="docutils literal notranslate"><span class="pre">\date</span></code>, <code class="docutils literal notranslate"><span class="pre">\author</span></code> and <code class="docutils literal notranslate"><span class="pre">\version</span></code>:</p></li>
+</ol>
+<blockquote>
+<div><p>you can also add these tags in your file’s header to specify a date, the author and your file version</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+* \date 05/2020
+* \author Somfy
+* \version 01
+*/
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><code class="docutils literal notranslate"><span class="pre">\brief</span></code>:</p></li>
+</ol>
+<blockquote>
+<div><p>you can use this tag to give a brief description of your stucture:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+* \brief give a description
+*     you can also give a description in several line but do not forget to indent the block.
+*/
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;param</span></code>:</p></li>
+</ol>
+<blockquote>
+<div><p>starts a parameter description for a function parameter with name &lt;parameter-name&gt;,
+followed by a description of the parameter:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*! Example of motor motion managing.
+*  @param speed,direction  set the motor direction and speed.
+*/
+void MotionManager(uint32_t speed,MotorDirection direction)
+{
+}
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">&#64;param</span></code> command has also an optional attribute, <code class="docutils literal notranslate"><span class="pre">dir</span></code>, specifying the direction of the parameter.
+Possible values are <code class="docutils literal notranslate"><span class="pre">[in]</span></code>, <code class="docutils literal notranslate"><span class="pre">[in,out]</span></code>, and <code class="docutils literal notranslate"><span class="pre">[out]</span></code>. When a parameter is both input and output,
+<code class="docutils literal notranslate"><span class="pre">[in,out]</span></code> is used as attribute. Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+*  @param[in] ParameterName give_the_parameter_description
+*  @param[out] ParameterName give_the_parameter_description
+*  @param[in,out] ParameterName give_the_parameter_description
+*/
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><code class="docutils literal notranslate"><span class="pre">&#64;return</span></code>:</p></li>
+</ol>
+<blockquote>
+<div><p>allows to get a method or a fonction return:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!
+*  @return ReturValue description_of_the_return value
+*/
+</pre></div>
+</div>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="documentation-s-structures">
+<h2>documentation’s Structures<a class="headerlink" href="#documentation-s-structures" title="Permalink to this headline">¶</a></h2>
+<p>documenting each part of your code ensures easy understanding and its maintenance,so you must provide
+a maximum of information. in this following section you’ll find recommendations about how to document
+your code elements.</p>
+<div class="section" id="public-elements">
+<h3>Public elements:<a class="headerlink" href="#public-elements" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
 <li><p>Constructors/Destructors and parameters:</p></li>
+</ol>
+<blockquote>
+<div><p>you can add documentation block to your Constructors and Destructors according to this following
+example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="n">public</span><span class="p">:</span>
+    <span class="o">/**</span>
+    <span class="o">*</span> \<span class="n">brief</span>  <span class="n">constructor</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">description</span>
+    <span class="o">*</span> <span class="nd">@param</span><span class="p">[</span><span class="ow">in</span><span class="p">]</span> <span class="n">ParameterArgument</span><span class="p">:</span> <span class="n">Parameter</span> <span class="n">description</span>
+    <span class="o">*/</span>
+   <span class="n">ClassName</span><span class="p">(</span><span class="n">Parameter</span> <span class="o">&amp;</span><span class="n">ParameterArgument</span><span class="p">);</span> <span class="c1">#Constructors have same names as the classes.</span>
+ <span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
 <li><p>functions and return type:</p></li>
 </ol>
+<blockquote>
+<div><p>function and there return type must be documented as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="n">public</span><span class="p">:</span>
+    <span class="o">/**</span>
+    <span class="o">*</span> \<span class="n">brief</span> <span class="n">give</span> <span class="n">the</span> <span class="n">fonction</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">a</span> <span class="n">brief</span> <span class="n">description</span> <span class="n">of</span> <span class="n">its</span> <span class="n">behavior</span>
+    <span class="o">*</span> <span class="nd">@return</span> <span class="n">ReturType</span><span class="p">:</span> <span class="n">decribe</span> <span class="n">the</span> <span class="k">return</span> <span class="nb">type</span> <span class="ow">and</span> <span class="n">exeption</span> <span class="k">if</span> <span class="n">exists</span>
+    <span class="o">*/</span>
+   <span class="n">ReturnType</span> <span class="n">FunctionName</span><span class="p">(</span><span class="n">void</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div></blockquote>
-</li>
-<li><p>Private elements:</p>
+</div></blockquote>
+</div>
+<div class="section" id="private-elements">
+<h3>Private elements:<a class="headerlink" href="#private-elements" title="Permalink to this headline">¶</a></h3>
+<p>this section contains specially parameters attributes.</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>attributes:</p></li>
+<li><p>attributes or Parameter arguments:</p></li>
 </ol>
+<blockquote>
+<div><p>attributes initializations should also be documented as the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ClassName</span>
+<span class="p">{</span>
+    <span class="n">private</span><span class="p">:</span>
+    <span class="o">/**</span>
+    <span class="o">*</span>\<span class="n">brief</span> <span class="n">give</span> <span class="n">the</span> <span class="n">ParameterArgument</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">describe</span> <span class="n">briefly</span> <span class="n">its</span> <span class="n">behavior</span>
+    <span class="o">*/</span>
+    <span class="n">ParameterName</span> <span class="o">&amp;</span><span class="n">ParameterArgument</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div></blockquote>
-</li>
-</ul>
+</div></blockquote>
 </div>
-<div class="section" id="source-files-structures">
-<h2>source files Structures<a class="headerlink" href="#source-files-structures" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Parameters initialisations:</p></li>
-<li><p>Functions implementations:</p></li>
-</ul>
 </div>
-<div class="section" id="templates">
-<h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="documentation-example">
+<h2>documentation example:<a class="headerlink" href="#documentation-example" title="Permalink to this headline">¶</a></h2>
+<p>find bellow an example of a complete documentation on a composant <code class="docutils literal notranslate"><span class="pre">blinky.h</span></code> using previous
+tags and comment blocks:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>/*!*****************************************************************************
+*  \file blinky.h
+*  \date 2020
+*  \author Somfy
+*  \version 01
+*******************************************************************************/
+
+#ifndef __BLINKY_H__
+#define __BLINKY_H__
+
+#include &lt;cstdint&gt;
+#include &quot;LedDriverInterface.h&quot;
+
+class Blinky
+{
+    public:
+        /**
+         * @brief Blinky constructor
+         * @param[in] arg_ledDriver A LedDriver implementing the LedDriverInterface
+         */
+        Blinky(LedDriverInterface &amp;arg_ledDriver);
+
+        /**
+         * @brief Start the blinking
+         */
+        void start(void);
+
+        /**
+         * @brief Return the blinking state as a boolean
+         * @return bool: true if blinking is started, false if the blinking is not started
+         */
+        bool isStarted(void);
+
+        /**
+         * @brief Stop the blinking
+         */
+        void stop(void);
+
+        /**
+         * @brief Schedule the blinking
+         */
+        void refresh(void);
+
+    private:
+        /** @brief m_ledDriver: initialising the led driver */
+        LedDriverInterface &amp;m_ledDriver;
+        /** @brief m_counter: initialising a counter to reset the blinking */
+        uint16_t m_counter;
+        /** @brief m_isBlinking: this parameter return the blinking status */
+        bool m_isBlinking;
+};
+
+#endif
+</pre></div>
 </div>
-<div class="section" id="welcome-to-componentdocumentation-s-documentation">
-<h2>Welcome to ComponentDocumentation’s documentation!<a class="headerlink" href="#welcome-to-componentdocumentation-s-documentation" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 </div>
 </div>
