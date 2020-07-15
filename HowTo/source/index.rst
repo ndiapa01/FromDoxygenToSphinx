@@ -1,5 +1,5 @@
 ========================================
-Somfy Component Documentation generation
+Component Documentation generation
 ========================================
 
 This document adresses how to stucture a component documentation and recommendations about what we should provide 
@@ -60,7 +60,7 @@ here are some useful tags that you can use to document your code:
 
         /*!
         * \date 05/2020
-        * \author Somfy
+        * \author
         * \version 01
         */
 
@@ -169,7 +169,7 @@ tags and comment blocks::
     /*!*****************************************************************************
     *  \file blinky.h
     *  \date 2020
-    *  \author Somfy
+    *  \author 
     *  \version 01
     *******************************************************************************/
 
