@@ -109,6 +109,34 @@ documentation's Structures
 documenting each part of your code ensures easy understanding and its maintenance,so you must provide
 a maximum of information. in this following section you'll find recommendations about how to document 
 your code elements.
+
+component General informations
+******************************
+
+   #. Introduction and Context
+   
+   #. fonctionnal description 
+   
+   #. How to use
+   
+   #. memory footprint 
+   
+
+
+
+component specificites
+**********************
+
+
+   #. dependencies
+   
+   #. constraintes and limitations
+   
+   #. restrictions
+
+
+
+
  
 Public elements:
 ****************
