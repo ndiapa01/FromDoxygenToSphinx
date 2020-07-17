@@ -113,10 +113,19 @@ your code elements.
 component General informations
 ******************************
 
+
    #. Introduction and Context
+   
+    in this part you should give informations concerning the component and it's context. these informations
+    define the component's identification and properties. The identification includes the component name and version as well.
+	the component context expresses the the component's utilities and the way it is intended to be used. 
+	this section is a general overview section that provides a brief  description of what the component does. you can also add here more informations about the design rationale, applicability and objectives of the component.
+
    
    #. fonctionnal description 
    
+    the functionnal description provides a detailed functionnal specification of the component 
+	
    #. How to use
    
    #. memory footprint 
