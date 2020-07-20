@@ -34,7 +34,7 @@ There is several ways to define a comment block in C++:
         /*!
         *  write your documentation
         */
-		
+
 .. note::
     in the last case the intermediate ``*`` is optionnal.
 
@@ -114,13 +114,61 @@ component General informations
 ******************************
 
 
-   #. Introduction and Context
+   1. **Introduction and Context**
    
-   #. fonctionnal description 
+    in this part you should give informations concerning the component and it's context. these informations 
+    define the component's identification and properties. The identification includes the component name, the author or developper, and it's version as well.
+    the component context expresses the the component's utilities and the way it is intended to be used.
+    this section is a general overview section that provides a brief  description of what the component does.
+    You can also add here more informations about the design rationale, applicability and objectives of the component.
+
    
-   #. How to use
+   2. **fonctionnal description** 
    
-   #. memory footprint 
+    the functionnal description provides a detailed functionnal specification of the component. giving here the functionnal architecture can provide easy 
+    understanding of the component's modules and functions,it can also details a structured view of functions hierarchy.
+    fonctionnal and UML diagrams can also be given in this section.
+    
+    Sphinx supports UML diagrams thanks to the extension named PLantUML. See `here <https://pypi.org/project/sphinxcontrib-plantuml/>`__ how to set up PlantUML in sphinx.
+   
+   **Example:**
+    
+.. uml::
+
+        @startuml
+        Function1 -> Function2: link1
+		
+        function3 <- Function2: link2
+		
+		function3 -> Function1: link3
+		@enduml
+
+.. uml::
+
+
+        @startuml
+        interface "Data Access" as DA
+
+        DA - [First Component]
+        [First Component] ..> HTTP : use
+
+        note left of HTTP : Web Service only
+
+        note right of [First Component]
+        A note can also
+        be on several lines
+        end note
+
+        @enduml
+
+
+3. **How to use**
+   
+   describe here informations concerning the component selection, reuse and how to integrated it with third-party components.
+   The purpose of the reuse manual is to assure the software engineers that the component fits  their needs and is therefore suitable for reuse in a certain scenario, 
+   and give information about the component's interfaces.
+   
+4. **Memory footprint**
    
 
 
@@ -129,11 +177,11 @@ component specificites
 **********************
 
 
-   #. dependencies
+   #. **dependencies**
    
-   #. constraintes and limitations
+   #. **constraintes and limitations**
    
-   #. restrictions
+   #. **restrictions**
 
 
 

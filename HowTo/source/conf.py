@@ -30,8 +30,10 @@ release = '01'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
+extensions = ['sphinx.ext.autodoc','sphinx.ext.graphviz','sphinx.ext.githubpages','sphinxcontrib.plantuml'
 ]
+
+plantuml = 'java -jar ./plantuml.jar'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -41,6 +43,8 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+# add PlantUML
+# plantuml = ‘java -jar ./utils/plantum.jar’
 
 # -- Options for HTML output -------------------------------------------------
 

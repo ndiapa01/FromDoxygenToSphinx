@@ -33,6 +33,7 @@
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" /> 
 </head>
@@ -299,20 +300,67 @@ your code elements.</p>
 <h3>component General informations<a class="headerlink" href="#component-general-informations" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>Introduction and Context</p></li>
-<li><p>fonctionnal description</p></li>
-<li><p>How to use</p></li>
-<li><p>memory footprint</p></li>
+<li><p><strong>Introduction and Context</strong></p></li>
 </ol>
+<blockquote>
+<div><p>in this part you should give informations concerning the component and it’s context. these informations
+define the component’s identification and properties. The identification includes the component name, the author or developper, and it’s version as well.
+the component context expresses the the component’s utilities and the way it is intended to be used.
+this section is a general overview section that provides a brief  description of what the component does.
+You can also add here more informations about the design rationale, applicability and objectives of the component.</p>
 </div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>fonctionnal description</strong></p></li>
+</ol>
+<blockquote>
+<div><p>the functionnal description provides a detailed functionnal specification of the component. giving here the functionnal architecture can provide easy
+understanding of the component’s modules and functions,it can also details a structured view of functions hierarchy.
+fonctionnal and UML diagrams can also be given in this section.</p>
+<p>Sphinx supports UML diagrams thanks to the extension named PLantUML. See <a class="reference external" href="https://pypi.org/project/sphinxcontrib-plantuml/">here</a> how to set up PlantUML in sphinx.</p>
+</div></blockquote>
+<p><strong>Example:</strong></p>
+</div></blockquote>
+<p class="plantuml">
+<img src="_images/plantuml-9ad48f19646897f9ab0658160901ddf00cc0c65e.png" alt="&#64;startuml
+Function1 -&gt; Function2: link1
+
+function3 &lt;- Function2: link2
+
+        function3 -&gt; Function1: link3
+        &#64;enduml"/>
+</p>
+<p class="plantuml">
+<img src="_images/plantuml-64755c77f66d696661a7310992b6d4c6a73fc46b.png" alt="&#64;startuml
+interface &quot;Data Access&quot; as DA
+
+DA - [First Component]
+[First Component] ..&gt; HTTP : use
+
+note left of HTTP : Web Service only
+
+note right of [First Component]
+A note can also
+be on several lines
+end note
+
+&#64;enduml"/>
+</p>
+<ol class="arabic" start="3">
+<li><p><strong>How to use</strong></p>
+<p>describe here informations concerning the component selection, reuse and how to integrated it with third-party components.
+The purpose of the reuse manual is to assure the software engineers that the component fits  their needs and is therefore suitable for reuse in a certain scenario,
+and give information about the component’s interfaces.</p>
+</li>
+<li><p><strong>Memory footprint</strong></p></li>
+</ol>
 </div>
 <div class="section" id="component-specificites">
 <h3>component specificites<a class="headerlink" href="#component-specificites" title="Permalink to this headline">¶</a></h3>
 <blockquote>
 <div><ol class="arabic simple">
-<li><p>dependencies</p></li>
-<li><p>constraintes and limitations</p></li>
-<li><p>restrictions</p></li>
+<li><p><strong>dependencies</strong></p></li>
+<li><p><strong>constraintes and limitations</strong></p></li>
+<li><p><strong>restrictions</strong></p></li>
 </ol>
 </div></blockquote>
 </div>
