@@ -12,6 +12,8 @@
 #
 import os
 import sys
+pip install sphinxcontrib.plantuml
+
 # sys.path.insert(0, os.path.abspath('.'))
 
 
